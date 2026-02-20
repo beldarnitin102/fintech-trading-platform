@@ -1,11 +1,11 @@
 import React from 'react'
 
-const CreateTicket = () => {
+const Navbar = () => {
   return (
     <div>
-      
+   
     </div>
   )
 }
 
-export default CreateTicket
+export default Navbar
