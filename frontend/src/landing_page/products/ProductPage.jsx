@@ -9,12 +9,12 @@ import Navbar from '../Navbar'
 const ProductPage = () => {
   return (
     <div>
-      <Navbar/>
+      
       <Hero/>
       <RightSection/>
       <LeftSection/>
       <Universe/>
-      <Footer/>
+      
     </div>
   )
 }

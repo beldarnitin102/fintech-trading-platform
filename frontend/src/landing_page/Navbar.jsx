@@ -1,11 +1,70 @@
-import React from 'react'
+import React from "react";
+import logo from "./images/logo.svg";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-   
-    </div>
-  )
-}
+    <nav
+      class="navbar navbar-expand-lg border-bottom "
+      style={{ backgroundColor: "#FFF" }}
+    >
+      <div class="container p-2">
+        <Link class="navbar-brand" href="#" to={"/home"}>
+          <img src={logo} alt="logo" style={{ width: "25%" }}></img>
+        </Link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav me-auto  mb-lg-0">
+              <li class="nav-item">
+                <Link
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  to={"/signup"}
+                >
+                  Signup
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link class="nav-link active" href="#" to={"/about"}>
+                  About
+                </Link>
+              </li>
 
-export default Navbar
+              <li class="nav-item">
+                <Link class="nav-link active" href="#" to={"/Product"}>
+                  Product
+                </Link>
+              </li>
+
+              <li class="nav-item">
+                <Link class="nav-link active" href="#" to={"/Pricing"}>
+                  Pricing
+                </Link>
+              </li>
+
+              <li class="nav-item">
+                <Link class="nav-link active" href="#" to={"/Support"}>
+                  Support
+                </Link>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

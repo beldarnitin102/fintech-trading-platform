@@ -7,10 +7,10 @@ import Footer from '../Footer'
 const SupportPage = () => {
   return (
     <div>
-      <Navbar/>
+      
       <CreateTicket/>
       <Hero/>
-      <Footer/>
+     
     </div>
   )
 }
