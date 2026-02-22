@@ -1,11 +1,51 @@
-import React from 'react'
+import React from "react";
+import googlePlayBadge from "../images/googlePlayBadge.svg";
+import appStoreBadge from "../images/appStoreBadge.svg";
 
-const LeftSection = () => {
+const LeftSection = ({
+  imageURL,
+  productName,
+  productDescription,
+  tryDemo,
+  learnMore,
+  googlePlay,
+  appStore,
+}) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="container mt-5">
+      <div className="row ">
+        <div className="col-6 ">
+          <img src={imageURL} alt="" />
+        </div>
 
-export default LeftSection
+        <div className="col-6 p-5 mt-5">
+          <h1>{productName}</h1>
+          <p>{productDescription}</p>
+
+          <div>
+            <a href={tryDemo}>Try Demo</a>
+            <a href={learnMore} style={{ marginLeft: "50px" }}>
+              learnmore
+            </a>
+          </div>
+
+          <div className="mt-3">
+            <a href={googlePlay}>
+              <img src={googlePlayBadge} alt="google play badge" />
+            </a>
+            <a href={appStore}>
+              {" "}
+              <img
+                src={appStoreBadge}
+                alt="app store badge"
+                style={{ marginLeft: "50px" }}
+              />{" "}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default LeftSection;
