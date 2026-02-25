@@ -14,14 +14,14 @@ import SupportPage from "./landing_page/support/SupportPage.jsx"
 import Footer from './landing_page/Footer.jsx'
 import Navbar from './landing_page/Navbar.jsx'
 import NotFound from './landing_page/NotFound.jsx'
-
+import "react-toastify/dist/ReactToastify.css"
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <Navbar/>
   <Routes>
 
-    <Route path='/' element={<HomePage/>}/>
+    <Route path='/home' element={<HomePage/>}/>
 
     <Route path='/signup' element={<Signup/>}/>
 

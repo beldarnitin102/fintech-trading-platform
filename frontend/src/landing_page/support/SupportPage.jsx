@@ -1,18 +1,14 @@
-import React from 'react'
-import CreateTicket from './CreateTicket'
-import Hero from './Hero'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+import React from "react";
+import CreateTicket from "./CreateTicket";
+import Hero from "./Hero";
 
 const SupportPage = () => {
   return (
     <div>
-      
-      <CreateTicket/>
-      <Hero/>
-     
+      <Hero />
+      <CreateTicket />
     </div>
-  )
-}
+  );
+};
 
-export default SupportPage
+export default SupportPage;
