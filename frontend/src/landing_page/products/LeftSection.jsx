@@ -1,6 +1,6 @@
 import React from "react";
 import googlePlayBadge from "../images/googlePlayBadge.svg";
-import appStoreBadge from "../images/appStoreBadge.svg";
+import appstoreBadge from "../images/appstoreBadge.svg";
 
 const LeftSection = ({
   imageURL,
@@ -36,7 +36,7 @@ const LeftSection = ({
             <a href={appStore}>
               {" "}
               <img
-                src={appStoreBadge}
+                src={appstoreBadge}
                 alt="app store badge"
                 style={{ marginLeft: "50px" }}
               />{" "}
